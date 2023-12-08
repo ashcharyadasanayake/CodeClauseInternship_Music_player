@@ -76,7 +76,7 @@ def prev_music():
 
 organize_menu = Menu(menubar, tearoff=False)
 organize_menu.add_command(label='Select Folder', command=load_music)
-menubar.add_cascade(label='Organize', menu=organize_menu)
+menubar.add_cascade(label='FILES', menu=organize_menu)
 
 songlist = Listbox(root, bg="black", fg="white", width=100, height=15)
 songlist.pack()
@@ -100,3 +100,4 @@ next_btn.grid(row=0, column=3, padx=7, pady=10)
 prev_btn.grid(row=0, column=0, padx=7, pady=10)
 
 root.mainloop()
+
